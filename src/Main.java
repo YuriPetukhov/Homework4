@@ -14,15 +14,9 @@ public class Main {
     public static void task1 () {
         System.out.println("Задача 1");
 
-        int age;
-        age = 17;
-        if (age >= 18) {
-            System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
-        } else {
-            System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать");
-        }
-
-        age = 20;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите количество полных лет");
+        int age = in.nextInt();
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
         } else {
@@ -33,15 +27,9 @@ public class Main {
     public static void task2 () {
         System.out.println("Задача 2");
 
-        int temperature;
-        temperature = 3;
-        if (temperature < 5) {
-            System.out.println("На улице холодно, нужно надеть шапку");
-        } else {
-            System.out.println("Сегодня тепло, можно идти без шапки");
-        }
-
-        temperature = 20;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите температуру на улице");
+        int temperature = in.nextInt();
         if (temperature < 5) {
             System.out.println("На улице холодно, нужно надеть шапку");
         } else {
@@ -52,26 +40,23 @@ public class Main {
     public static void task3 () {
         System.out.println("Задача 3");
 
-        int speed;
-        speed = 55;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите скорость");
+        int speed = in.nextInt();
         if (speed <= 60) {
             System.out.println("Превышенияч скорости нет. Если скорость " + speed + ", то можно ездить спокойно");
         } else {
             System.out.println("Скопрость превышена! Если скорость " + speed + ", то придется заплатить штраф");
         }
 
-        speed = 80;
-        if (speed <= 60) {
-            System.out.println("Превышения скорости нет. Если скорость " + speed + ", то можно ездить спокойно");
-        } else {
-            System.out.println("Скорость превышена! Если скорость " + speed + ", то придется заплатить штраф");
-        }
     }
 
     public static void task4 () {
         System.out.println("Задача 4");
 
-        int age = 5;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите количество полных лет");
+        int age = in.nextInt();
         if (age >= 2 && age <= 6) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
         } else if (age >= 7 && age <= 18) {
