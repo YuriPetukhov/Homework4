@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -85,7 +87,10 @@ public class Main {
     public static void task5 () {
         System.out.println("Задача 5");
 
-        int age = 4;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите количество полных лет");
+        int age = in.nextInt();
+
         if (age <= 5) {
             System.out.println("Если возраст человека равен " + age + ", то ему нельзя кататься на аттракционе");
         } else if (age > 5 && age <= 14) {
@@ -99,10 +104,12 @@ public class Main {
     public static void task6 () {
         System.out.println("Задача 6");
 
-        int passengersNumber = 30;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите количество пассажиров");
+        int passengersNumber = in.nextInt();
         if (passengersNumber > 60 && passengersNumber < 102) {
             System.out.println("В вагоне есть стоячие места");
-        } else if (passengersNumber < 42) {
+        } else if (passengersNumber < 60) {
             System.out.println("В вагоне есть сидячие места");
         } else {
             System.out.println("Вагон переполнен");
@@ -112,17 +119,19 @@ public class Main {
     public static void task7 () {
         System.out.println("Задача 7");
 
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите три числа для сравнения");
         int one;
         int two;
         int three;
 
-        one = 25;
-        two = 30;
-        three = 9;
+        one = in.nextInt();
+        two = in.nextInt();
+        three = in.nextInt();
 
-        if (one > two && two > three) {
+        if (one > two && one > three) {
             System.out.println("Число " + one + " самое большое");
-        } else if (two > one && one > three) {
+        } else if (two > one && two > three) {
             System.out.println("Число " + two + " самое большое" );
         } else {
             System.out.println("Число " + three + " самое большое");
