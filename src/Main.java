@@ -10,7 +10,6 @@ public class Main {
         task6();
         task7();
     }
-
     public static void task1 () {
         System.out.println("Задача 1");
 
@@ -78,9 +77,9 @@ public class Main {
 
         if (age <= 5) {
             System.out.println("Если возраст человека равен " + age + ", то ему нельзя кататься на аттракционе");
-        } else if (age > 5 && age <= 14) {
+        } else if (age <= 14) {
             System.out.println("Если возраст человека равен " + age + ", то ему можно кататься на аттракционе в сопровождении взрослого");
-        } else if (age > 14 && age < 18) {
+        } else if (age < 18) {
             System.out.println("Если возраст человека равен " + age + ", то ему можно кататься на аттракционе без сопровождения взрослого");
         } else {
             System.out.println("Вы уже сами взрослый человек и можете сами сопровождать детей");
